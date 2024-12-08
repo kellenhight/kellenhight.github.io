@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-italic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+}
+
+.inter-bold-italic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.gilda-display-regular {
+  font-family: "Gilda Display", "Geogria", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Inter", Helvetica;
+  color: #14252d;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16;
+}
+
+body.window > * {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gilda Display";
+  font-size: 4.5em;
+  /* line-height: 1.5; */
+  padding-top: 4.5%;
+  /* padding-bottom: 0.05em; */
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+
+h4 {
+  font-size: 1.75em;
+  padding-top: 1%;
+}
+
+h5 {
+  font-size: 1.25em;
+  padding-top: 0.5%;
+}
+
+h6 {
+  font-size: 1em;
+  padding-top: 0.5%;
+}
+
+p, ul, ol, li {
+  font-family: "Inter";
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+p {
+  padding-top: 0.95em;
+}
+
+p.reference-subhead {
+  padding-top: 0.5em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+li {
+  padding-top: 0.5em;
+}
+
+a[href^="/"] {
+  color: #14252d;
+}
+
+a[href^="http://"], a[href^="https://"] {
+  color: #416448;
+}
+
+a[href^="http://"]::after, a[href^="https://"]::after {
+  width: 0.65em;
+  height: 0.65em;
+  display: inline-block;
+  margin-left: 5px;
+  content: url("/icons/external-link.svg");
+}
+
+nav.sidebar {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #23573b20;
+  align-content: start;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 3px #14252d10;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar::after {
+  box-shadow: 10px 0px 40px #14252dee;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  background-color: #23573b30;
+}
+
+.sidebar:hover::after {
+  opacity: 1;
+}
+
+.sidebar-icon {
+  width: 60%;
+  position: relative;
+  /* left: 20%; */
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.sitemap {
+  text-align: center;
+  line-height: 2em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sm-selected {
+  font-style: italic;
+}
+
+/* div.header-outer {
+  flex-direction: left;
+} */
+
+/* .header-inner {
+  flex-direction: left;
+  font-size: 
+} */
+
+/* div.page {
+  
+} */
+
+.contents {
+  margin-left: 200px;
+  padding: 0% 10% 0%;
+  padding-top: 25px;
+  flex-direction: column;
+  max-width: 70%;
+  overflow-y: clip;
+}
+
+
+.references-section {
+  padding-top: 15px;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.reference {
+  background-color: #eff4f5;
+  padding: 10px 30px 30px 30px;
+  border-radius: 4px;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  /* background: linear-gradient(180deg, rgba(255,255,255,1) 60%, rgba(224,224,224,1) 100%);  */
+  text-align: center;
+  align-content: center;
+  font-size: 0.85em;
+  font-family: "Inter", Helvetica;
+  font-weight: 200;
+  font-style: italic;
+  color: #14252d;
+}
+
+@media screen and (max-width: 800px) {
+  nav.sidebar {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d0e0d8ec;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px) saturate(65%);
+  }
+
+  .sidebar:hover {
+    background-color: #d0e0d8ec;
+  }
+
+  .sidebar:hover::after {
+    opacity: 0;
+  }
+
+  .sidebar-icon {
+    width: 4em;
+    padding: 10px;
+    vertical-align: middle;
+  }
+
+  .sitemap {
+    text-align: center;
+    line-height: 0.75em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .sitemap > li {
+    display: inline;
+    padding: 5px;
+  }
+
+  .contents {
+    max-width: 100%;
+    margin-left: 0;
+    padding-top: 25px;
+    margin-right: 0em;
+  }
+
+  .references-section {
+    grid-auto-flow: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+}
