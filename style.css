@@ -158,12 +158,14 @@ hr {
   z-index: 0;
 }
 
-a[href^="/"] {
+a[href^="/"],
+a[href^="mailto:"] {
   color: var(--color-text);
 }
 
 a[href^="http://"],
-a[href^="https://"] {
+a[href^="https://"],
+a[href^="mailto:"] {
   color: var(--color-link);
 }
 
