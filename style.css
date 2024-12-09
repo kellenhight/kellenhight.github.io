@@ -42,15 +42,47 @@
   font-style: normal;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #14252d;
+    --color-body-bg: #f5fff5;
+    --color-link: #416448;
+    --color-grid-bg: #eff4f5;
+    --color-sidebar-bg-before: #23573b20;
+    --color-sidebar-bg-after: #23573b30;
+    --color-sidebar-shadow-before: #14252d10;
+    --color-sidebar-shadow-after: #14252dee;
+    --color-topbar-bg: #d0e0d8ec;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f5fff5;
+    --color-body-bg: #14252d;
+    --color-link: #8FB79C;
+    --color-grid-bg: #26373b;
+    --color-sidebar-bg-before: #23573b80;
+    --color-sidebar-bg-after: #23573bd9;
+    --color-sidebar-shadow-before: #29485710;
+    --color-sidebar-shadow-after: #294857de;
+    --color-topbar-bg: #23573bed;
+  }
+}
+
 * {
   font-family: "Inter", Helvetica;
-  color: #14252d;
+  color: var(--color-text);
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 16;
+}
+
+body.window {
+  background-color: var(--color-body-bg);
 }
 
 body.window>* {
@@ -125,12 +157,12 @@ hr {
 }
 
 a[href^="/"] {
-  color: #14252d;
+  color: var(--color-text);
 }
 
 a[href^="http://"],
 a[href^="https://"] {
-  color: #416448;
+  color: var(--color-link);
 }
 
 a[href^="http://"]::after,
@@ -148,23 +180,23 @@ nav.sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #23573b20;
+  background-color: var(--color-sidebar-bg-before);
   align-content: start;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px 0px 3px #14252d10;
+  box-shadow: 0px 0px 3px var(--color-sidebar-shadow-before);
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
 
 .sidebar::after {
-  box-shadow: 10px 0px 40px #14252dee;
+  box-shadow: 10px 0px 40px var(--color-sidebar-shadow-after);
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
 .sidebar:hover {
-  background-color: #23573b30;
+  background-color: var(--color-sidebar-bg-after);
 }
 
 .sidebar:hover::after {
@@ -228,7 +260,7 @@ footer {
   font-family: "Inter", Helvetica;
   font-weight: 200;
   font-style: italic;
-  color: #14252d;
+  color: var(--color-text);
 }
 
 footer>p {
@@ -242,7 +274,7 @@ footer>p {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #d0e0d8ec;
+    background-color: var(--color-topbar-bg);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -252,7 +284,7 @@ footer>p {
   }
 
   .sidebar:hover {
-    background-color: #d0e0d8ec;
+    background-color: var(--color-topbar-bg);
   }
 
   .sidebar:hover::after {
