@@ -42,7 +42,7 @@
   font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --color-text: #14252d;
     --color-body-bg: #f5fff5;
