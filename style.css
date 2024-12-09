@@ -45,8 +45,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --color-text: #14252d;
-    --color-body-bg: #f5fff5;
-    --color-link: #416448;
+    --color-body-bg: #fafffa;
+    --color-link: #3c5d42;
     --color-grid-bg: #eff4f5;
     --color-sidebar-bg-before: #23573b20;
     --color-sidebar-bg-after: #23573b30;
