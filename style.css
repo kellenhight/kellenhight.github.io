@@ -49,7 +49,7 @@
     --color-link: #3c5d42;
     --color-grid-bg: #eff4f5;
     --color-sidebar-bg-before: #23573b20;
-    --color-sidebar-bg-after: #23573b30;
+    --color-sidebar-bg-after: #23573b25;
     --color-sidebar-shadow-before: #14252d10;
     --color-sidebar-shadow-after: #14252dee;
     --color-topbar-bg: #d0e0d8ec;
@@ -158,8 +158,7 @@ hr {
   z-index: 0;
 }
 
-a[href^="/"],
-a[href^="mailto:"] {
+a[href^="/"] {
   color: var(--color-text);
 }
 
@@ -170,7 +169,8 @@ a[href^="mailto:"] {
 }
 
 a[href^="http://"]::after,
-a[href^="https://"]::after {
+a[href^="https://"]::after,
+a[href^="mailto:"] {
   width: 0.65em;
   height: 0.65em;
   display: inline-block;
