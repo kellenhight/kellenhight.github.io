@@ -122,6 +122,7 @@ li {
 }
 
 br {
+  padding: 0;
   z-index: 0;
 }
 
@@ -192,19 +193,6 @@ nav.sidebar {
   font-style: italic;
 }
 
-/* div.header-outer {
-  flex-direction: left;
-} */
-
-/* .header-inner {
-  flex-direction: left;
-  font-size: 
-} */
-
-/* div.page {
-  
-} */
-
 .contents {
   margin-left: 200px;
   padding: 0% 10% 0%;
@@ -228,6 +216,11 @@ nav.sidebar {
   background-color: #eff4f5;
   padding: 10px 30px 30px 30px;
   border-radius: 4px;
+}
+
+header>p {
+  line-height: 0.5;
+  padding-top: 0.25em;
 }
 
 footer {
@@ -292,11 +285,6 @@ footer {
     margin-left: 0;
     padding-top: 25px;
     margin-right: 0em;
-  }
-
-  header>p {
-    line-height: 0.5;
-    padding-top: 0.25em;
   }
 
   .references-section {
