@@ -288,8 +288,9 @@ footer {
     margin-right: 0em;
   }
 
-  header {
+  header>p {
     line-height: 0.5;
+    padding-top: 0.25em;
   }
 
   .references-section {
