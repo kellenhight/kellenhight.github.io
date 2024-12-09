@@ -52,12 +52,17 @@ html {
   font-size: 16;
 }
 
-body.window > * {
+body.window>* {
   box-sizing: border-box;
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Gilda Display";
   font-size: 4.5em;
   /* line-height: 1.5; */
@@ -88,7 +93,10 @@ h6 {
   padding-top: 0.5%;
 }
 
-p, ul, ol, li {
+p,
+ul,
+ol,
+li {
   font-family: "Inter";
   font-size: 1em;
   line-height: 1.5;
@@ -116,11 +124,13 @@ a[href^="/"] {
   color: #14252d;
 }
 
-a[href^="http://"], a[href^="https://"] {
+a[href^="http://"],
+a[href^="https://"] {
   color: #416448;
 }
 
-a[href^="http://"]::after, a[href^="https://"]::after {
+a[href^="http://"]::after,
+a[href^="https://"]::after {
   width: 0.65em;
   height: 0.65em;
   display: inline-block;
@@ -266,7 +276,7 @@ footer {
     vertical-align: middle;
   }
 
-  .sitemap > li {
+  .sitemap>li {
     display: inline;
     padding: 5px;
   }
@@ -279,7 +289,7 @@ footer {
   }
 
   header {
-    line-height: 1;
+    line-height: 0.5;
   }
 
   .references-section {
