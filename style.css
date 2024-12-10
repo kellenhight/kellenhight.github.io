@@ -331,6 +331,10 @@ footer>p {
     padding: 5px;
   }
 
+  #theme-button {
+    margin-left: 8px;
+  }
+
   .contents {
     max-width: 100%;
     margin-left: 0;
