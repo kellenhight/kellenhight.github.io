@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if(theme === "dark") {
       localStorage.setItem('theme', 'dark');
       document.documentElement.setAttribute('data-theme', 'dark');
-      theme_icon.setAttribute('class', 'bi-moon-fill');
+      theme_icon.setAttribute('class', 'bi bi-moon-fill');
     } else {
       localStorage.setItem('theme', 'light');
       document.documentElement.setAttribute('data-theme', 'light');
-      theme_icon.setAttribute('class', 'bi-sun-fill');
+      theme_icon.setAttribute('class', 'bi bi-sun-fill');
     }
   }
   
