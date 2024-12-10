@@ -170,7 +170,7 @@ a[href^="mailto:"] {
 
 a[href^="http://"]::after,
 a[href^="https://"]::after,
-a[href^="mailto:"] {
+a[href^="mailto:"]::after {
   width: 0.65em;
   height: 0.65em;
   display: inline-block;
