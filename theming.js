@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var theme_toggle_button = document.getElementById("toggle_button");
+  var theme_toggle_button = document.getElementById("theme_button");
 
   function setTheme(theme) {
     if(theme === "dark") {
