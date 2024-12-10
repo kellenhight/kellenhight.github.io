@@ -183,6 +183,8 @@ nav.sidebar {
   top: 0;
   left: 0;
   background-color: var(--color-sidebar-bg-before);
+  display: flex;
+  flex-direction: column;
   align-content: start;
   justify-content: center;
   text-align: center;
