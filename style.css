@@ -265,6 +265,14 @@ nav.sidebar {
   border-radius: 4px;
 }
 
+.reference>h1 {
+  padding-top: 0.25em;
+}
+
+.reference>p {
+  padding-top: 0.1em;
+}
+
 header>p {
   line-height: 0.5;
   padding-top: 0.25em;
