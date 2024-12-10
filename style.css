@@ -42,35 +42,33 @@
   font-style: normal;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-text: #14252d;
-    --color-body-bg: #fafffa;
-    --color-link: #3c5d42;
-    --color-grid-bg: #eff4f5;
-    --color-sidebar-bg-before: #23573b20;
-    --color-sidebar-bg-after: #23573b30;
-    --color-sidebar-shadow-before: #14252d10;
-    --color-sidebar-shadow-after: #14252dee;
-    --color-topbar-bg: #d0e0d8ec;
-    --icon-external-link: url("/icons/light-external-link.svg");
-  }
+:root {
+  --color-text: #14252d;
+  --color-body-bg: #fafffa;
+  --color-link: #3c5d42;
+  --color-grid-bg: #eff4f5;
+  --color-sidebar-bg-before: #23573b20;
+  --color-sidebar-bg-after: #23573b30;
+  --color-sidebar-shadow-before: #14252d10;
+  --color-sidebar-shadow-after: #14252dee;
+  --color-topbar-bg: #d0e0d8ec;
+  --icon-external-link: url("/icons/light-external-link.svg");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #f5fff5;
-    --color-body-bg: #14252d;
-    --color-link: #8FB79C;
-    --color-grid-bg: #26373b;
-    --color-sidebar-bg-before: #23573b40;
-    --color-sidebar-bg-after: #23573b46;
-    --color-sidebar-shadow-before: #29485710;
-    --color-sidebar-shadow-after: #294857de;
-    --color-topbar-bg: #17312fec;
-    --icon-external-link: url("/icons/dark-external-link.svg");
-  }
+
+[data-theme="dark"] {
+  --color-text: #f5fff5;
+  --color-body-bg: #14252d;
+  --color-link: #8FB79C;
+  --color-grid-bg: #26373b;
+  --color-sidebar-bg-before: #23573b40;
+  --color-sidebar-bg-after: #23573b46;
+  --color-sidebar-shadow-before: #29485710;
+  --color-sidebar-shadow-after: #294857de;
+  --color-topbar-bg: #17312fec;
+  --icon-external-link: url("/icons/dark-external-link.svg");
 }
+
 
 * {
   font-family: "Inter", Helvetica;
@@ -214,6 +212,11 @@ nav.sidebar {
   padding-bottom: 25px;
 }
 
+.nav-and-theme {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sitemap {
   text-align: center;
   line-height: 2em;
@@ -224,6 +227,15 @@ nav.sidebar {
 
 .sm-selected {
   font-style: italic;
+}
+
+#theme-button {
+  color: var(--color-text);
+  opacity: 0.75;
+}
+
+#theme-button:hover {
+  opacity: 0.9;
 }
 
 .contents {
