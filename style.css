@@ -266,7 +266,8 @@ nav.sidebar {
 }
 
 .reference>h1 {
-  padding-top: 0.75em;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .reference>p {
