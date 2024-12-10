@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
   var theme_toggle_button = document.getElementById("theme-button");
+  var theme_icon = document.getElementById("theme-icon");
 
   function setTheme(theme) {
     if(theme === "dark") {
       localStorage.setItem('theme', 'dark');
       document.documentElement.setAttribute('data-theme', 'dark');
-      theme_toggle_button.setAttribute('value', '<i class="bi-moon"></i>');
+      theme_icon.setAttribute('class', 'bi-moon-fill');
     } else {
       localStorage.setItem('theme', 'light');
       document.documentElement.setAttribute('data-theme', 'light');
-      theme_toggle_button.setAttribute('value', '<i class="bi-sun-fill"></i>');
+      theme_icon.setAttribute('class', 'bi-sun-fill');
     }
   }
   
