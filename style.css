@@ -137,13 +137,6 @@ p {
   padding-top: 0.95em;
 }
 
-p.reference-subhead {
-  padding-top: 0.5em;
-  line-height: 1.25em;
-  font-style: italic;
-  font-weight: 300;
-}
-
 ul {
   padding-left: 40px;
 }
@@ -267,14 +260,21 @@ nav.sidebar {
 }
 
 .reference>h1 {
-  padding-top: 4em;
-  padding-bottom: 1em;
+  padding-top: 5em;
+  padding-bottom: 3em;
 }
 
 .reference>p {
   line-height: 1em;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+p.reference-subhead {
+  padding-top: 0.5em;
+  line-height: 0.85em;
+  font-style: italic;
+  font-weight: 300;
 }
 
 header>p {
