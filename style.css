@@ -245,7 +245,7 @@ nav.sidebar {
 }
 
 .reference {
-  background-color: #eff4f5;
+  background-color: var(--color-grid-bg);
   padding: 10px 30px 30px 30px;
   border-radius: 4px;
 }
