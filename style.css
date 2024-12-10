@@ -214,6 +214,9 @@ nav.sidebar {
 
 .nav-and-theme {
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -327,6 +330,10 @@ footer>p {
     padding: 5px;
   }
 
+  .nav-and-theme {
+    flex-direction: row;
+  }
+
   .contents {
     max-width: 100%;
     margin-left: 0;
@@ -343,6 +350,10 @@ footer>p {
 
 @media screen and (max-width: 300) {
   nav.sidebar {
+    flex-direction: column;
+  }
+
+  .nav-and-theme {
     flex-direction: column;
   }
 }
