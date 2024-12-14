@@ -21,11 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
       return false;
     } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
-    }
-
-    if (theme == "dark") {
-      document.documentElement.setAttribute("data-theme", "dark");
-      return "dark";
     } else {
       return "light";
     }
